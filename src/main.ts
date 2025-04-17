@@ -11,6 +11,5 @@ async function bootstrap() {
     },
   });
   await app.listen();
-  console.log('✅ user-ms escuchando en TCP 127.0.0.1:4003');
 }
 bootstrap();
