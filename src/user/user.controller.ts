@@ -7,11 +7,7 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @MessagePattern({ cmd: 'list_users' })
-  listUsers() {
-    console.log('Recibí la solicitud para obtener la lista de usuarios');
-    return [
-      { id: '1', name: 'Juan Pérez', email: 'juan@example.com' },
-      { id: '2', name: 'Ana Gómez', email: 'ana@example.com' },
-    ];
+  async listUsers() {
+    return 'Recibí la solicitud para obtener la lista de usuarios';
   }
 }
